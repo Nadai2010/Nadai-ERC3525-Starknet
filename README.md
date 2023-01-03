@@ -177,8 +177,8 @@ Así que procedi a crear los `SFT` con estos ajustes:
 * [Mint ID 3](https://testnet.starkscan.co/tx/0x3703aa31eaa429fbdba8905955a9d6dd27cb18e44c4e1901e76b15ce6b2fcc) = Slot 2, Valor 500000000000
 * [Mint ID 4](https://testnet.starkscan.co/tx/0x406d7a7e73f68c807dc628511fe284de79799149f02bfa6a5098aadf237685f) = Slot 2, Valor 120
 
-![Graph](/im%C3%A1genes/mint1.png) ![Graph](/im%C3%A1genes/mint2.png) 
-![Graph](/im%C3%A1genes/mint3.png) ![Graph](/im%C3%A1genes/mint4.png)
+![Graph](/im%C3%A1genes/mint1.png){:width="200px"} ![Graph](/im%C3%A1genes/mint2.png){:width="200px"} 
+![Graph](/im%C3%A1genes/mint3.png){:width="200px"} ![Graph](/im%C3%A1genes/mint4.png){:width="200px"}
 
 
 **`SlotEnumerableMintBurnable`**
@@ -199,10 +199,9 @@ User Wallet:
 ║ 2    ║        3 ║  500000000000 ║
 ║ 2    ║        4 ║           120 ║
 ╚══════╩══════════╩═══════════════╝
-```
-
 Total Slot 1 = 35
 Total Slot 2 = 500000000120 
+```
 
 ![Graph](/im%C3%A1genes/value1.png)
 ![Graph](/im%C3%A1genes/value2.png)
@@ -211,6 +210,8 @@ Total Slot 2 = 500000000120
 ## Pruebas Finales 
 
 Podemos repasar como nuestro segundo contrato puede verificar por cada ranura cuantas figuras hay en una categoria, y como con la categoría y el juguete especifico nos puede dar el id del articulo o cliente, con el cual se podría tener una mejor base de datos organizada para empezar a diseñar nuestra `GRAN TIENDA VIRTUAL`.
+
+![Graph](/im%C3%A1genes/read.png)
 
 -----------
 
