@@ -32,7 +32,7 @@ Algunos links sobre ERC3525:
 
 ### SFTs en Starknet
 
-Después de hacer varios `deploy` de algunos contratos de este tipo y ver el potencial que podrian traer, decidí analizar un poco más su lógica y aprender un poco más sobre ello, vemos como siguen llegando todo tipo de código a `Cairo` e impulsando aún mas a soluciones de L2.
+Después de hacer varios `deploy` de algunos contratos de este tipo y ver el potencial que podrian traer, decidí analizar un poco más su lógica y aprender un poco más sobre ello, vemos como siguen llegando todo tipo de código a `Cairo` e impulsando aún más las soluciones de L2.
 
 Ahora que sabemos un poco más sobre los `SFTs` podemos ver un caso de uso en `L2 de Starknet`. Primero hablaremos un poco de como han migrado estos contratos a `Cairo` en el ecosistema de `Starknet`. Ha sido el caso de `Carbonable`, que según sus documentos oficales abrieron la implementación de EIP-3525 en Starknet. La implementación se basa en la versión [Solidity ERC 3525](https://github.com/solv-finance/erc-3525/tree/main/contracts) de [Solv-protocol](https://twitter.com/SolvProtocol), cuyo equipo fue coautor del EIP, y estan tomando medidas para estandarizar la implementación de StarkNet.
 
