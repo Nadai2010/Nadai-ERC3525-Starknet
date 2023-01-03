@@ -13,7 +13,7 @@ Este estándar introduce un **`ID, SLOT, VALUE`** modelo escalar triple que repr
 
 El significado de la propiedad `value` es muy similar al de la propiedad `saldo` de un token EIP-20. Cada token tiene un atributo de `slot`, lo que garantiza que el valor de dos tokens con la misma ranura se trate como fungible, lo que agrega fungibilidad a la propiedad de valor de los tokens.
 
-Según [SFTlabs](https://sftlabs.io/), proporciona a las empresas criptográficas/Web3 y a los protocolos del mañana la gama completa de recursos, financiamiento y soporte para lanzar activos digitales disruptivos de Web3 con tecnología del estándar de token semifungible ERC-3525, comenta lo siguiente:
+Según [SFTlabs](https://sftlabs.io/), un laboratorio que proporciona a las empresas criptográficas/Web3 y a los protocolos del mañana la gama completa de recursos, financiamiento y soporte para lanzar activos digitales disruptivos de Web3 con tecnología del estándar de token semifungible ERC-3525, comenta lo siguiente:
 
 > Reescribe la generación y el comercio de activos digitales, creando eficiencias y mejorando la integridad del mercado. Con él, los activos tradicionalmente ilíquidos, como bonos, acciones futuras, ABS, bienes raíces y energía renovable, pueden volverse divisibles, representados en la cadena y comercializados libremente en un mercado abierto.
 
