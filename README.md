@@ -43,9 +43,9 @@ Ahora que sabemos un poco más sobre los `SFTs` podemos ver un caso de uso en `L
 ---
 ## Nadai SFTs en Starknet
 
-Aquí tuve que realizar algunas pruebas al respecto, sobre todo para distinguir entre dos versiones de contrato para su uso en una idea final, (que poco a poco iremos descubriendo). Podrá revisar y crear sus propios `SFTs` clonando la guia de [Nadai ERC3525 Starknet](https://github.com/Nadai2010/Nadai-ERC3525-Starknet) o en la [Repo Oficial Carbonable]y(https://github.com/Carbonable/carbonable-contracts) y haciendo los deploy de los contratos que decida. 
+Aquí tuve que realizar algunas pruebas al respecto, sobre todo para distinguir entre dos versiones de contrato para su uso en una idea final, (que poco a poco iremos descubriendo). Podrá revisar y crear sus propios `SFTs` clonando la guia de [Nadai ERC3525 Starknet](https://github.com/Nadai2010/Nadai-ERC3525-Starknet) o en la [Repo Oficial Carbonable](https://github.com/Carbonable/carbonable-contracts) y haciendo los deploy de los contratos que usted decida. 
 
-**Al final del documento dejaremos una mini sección para developer**
+**`Al final del documento dejaremos una mini sección para developer`**
 
 Entre estos contratos tenemos 3 opciones, aunque hemos decidido analizar dos contratos. El [ERC3525MintableBurnable](/src/carbonable/erc3525/presets/ERC3525MintableBurnable.cairo) y el [ERC3525SlotEnumerableMintableBurnable](/src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo) para marcar las principales diferencias y así ver como pueden mejorar en la tecnología y en no saturar la L1 con lógicas e implementaciones en soluciones innecesarias. 
 
