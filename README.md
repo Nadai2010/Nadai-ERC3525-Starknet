@@ -1,9 +1,14 @@
 # ¿Qué son los SFTs (Semi Fungibles Tokens)? 
+
+[StarkWare](https://starkware.co) <img src="https://media2.giphy.com/media/9x55tYxEVrI04pKHl1/giphy.gif" width="30">
+
 ## Los ERC-3525 están en Starknet.
 
 Buenas Amigos, ha llegado 2023 y como no podía ser menos debemos empezar con algunas ideas de desarrollo hacia L3. ¿Porqué en L3? ¿Es necesario? La mayoría de las respuestas serán NO, no debemos de sobrecargar las red principal de ETH y seguridad con proyectos, protocolos o capas innecesarias desde ningun punto de vista. Ya que desde mi humilde opinión, podemos crear modelos de nogocios inservibles, envueltos en fomo y con otras expectativas que no tendrán su logro, esto puede ser debido a que aunque la tecnología subyacente sea exitosa, su proyecto no debe necesarimente tener que incorporarla, ni servirle, recordad siempre los grandes casos de `BTC`, por ejemplo, Satoshi creo `BTC` como moneda para un medio de pagos entre personas libre, sin terceros ni autoridades intermediarias, pero al final el mal uso de la tecnolgía ha llevado a muchos declives de proyectos por estas malas causas, pero no ha sido culpa de `BTC` 🤣🤣...
 
 Pero bueno, ya que vamos hablar sobre nuevas ideas, recordamos que el **`L2022`** ya ha pasado, es año del **`L32023`**, memes a parte XD, antes de extendernos sobre ideas más locas y detalles más técnicos, iremos entrando en contexto con distintas soluciones, como los `SFTs`, hasta llegar a esas ideas un poco mas innovadoras y complejas, como posibles soluciones en una `Layer 3`.
+
+---
 
 ## ¿Qué son los SFTs y ERC 3525?
 
@@ -53,9 +58,17 @@ El segundo contrato es prácticamente igual al primero, con la única diferencia
 
 Un ejemplo de cómo este contrato podría ser útil podría ser el siguiente:
 
+---
+
 ### Tienda Online Anime Parte 1
 
-Imagina que tienes una tienda de juguetes y quieres vender figuras de anime. Supongamos que quieres dividir tus figuras en diferentes categorías, como `Dragon Ball Z` y `Naruto`. Además, quieres poder contar cuántas figuras hay en cada categoría. En este caso, el contrato `ERC3525SlotEnumerableMintableBurnable` sería el adecuado. Puedes usar las funciones [slotByIndex](src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo#L156) y [tokenSupplyInSlot](src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo#L163) para acceder a las figuras en cada categoría y [tokenInSlotByIndex]src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo#L171) para contar cuántas figuras hay en cada categoría.
+Imagina que tienes una tienda de juguetes y quieres vender figuras de anime. Supongamos que quieres dividir tus figuras en diferentes categorías, como `Dragon Ball Z` y `Naruto`. 
+
+<img align='center' src="https://media0.giphy.com/media/SV0LuYdSMmKEklpZKs/giphy.gif" width="230">
+
+https://camo.githubusercontent.com/7e111b98f8f89e7dbd9f3d7bef2d5cb1e9e4cd1336b57b5a8ed4a271bdbce50d/68747470733a2f2f6d65646961302e67697068792e636f6d2f6d656469612f5356304c755964534d6d4b456b6c705a4b732f67697068792e676966
+
+Además, quieres poder contar cuántas figuras hay en cada categoría. En este caso, el contrato `ERC3525SlotEnumerableMintableBurnable` sería el adecuado. Puedes usar las funciones [slotByIndex](src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo#L156) y [tokenSupplyInSlot](src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo#L163) para acceder a las figuras en cada categoría y [tokenInSlotByIndex]src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo#L171) para contar cuántas figuras hay en cada categoría.
 
 Cada juguete sería un token único y no fungible, y cada token se asignaría a un slot específico basado en el anime al que pertenece. Por ejemplo, todos los juguetes de Dragon Ball Z estarían en el slot 0, todos los de Naruto estarían en el slot 1, y así sucesivamente. 
 
@@ -63,6 +76,7 @@ Pero ahora iremos mucho más haya, podríamos crear colecciones gigantes, pedido
 
 
 ---
+
 ### Tienda Online Anime Parte 2
 
 Para llevar a cabo nuestra tienda de juguetes de anime de manera eficiente y segura, podemos utilizar la plataforma StarkNet en las capas 2 y 3. **Pero imagina ahora que esta idea se va haciendo realidad, que de verdad nos decidimos a crear nuestra tienda virtual, tenderemos que tener en cuenta transacciones, datos de usuarios, datos de empresas, Mmmm empieza a complicarse no??? L3 y ZKPs al rescate.** 
@@ -79,12 +93,13 @@ Por otro lado, en la capa 3, podemos utilizar zk-Starks para garantizar la priva
 
 * **Account Abstraction** aplicada a la Tienda, mejoraría la seguridad en el inicio de sesión en la cuenta de nuestra tienda de juguetes en línea. Esto nos permitiría utilizar contraseñas más seguras y protegidas gracias a la utilización de criptografía avanzada. Además, al utilizar account abstraction, podríamos garantizar que solo el propietario de la cuenta pueda acceder a ella y realizar transacciones, evitando posibles intentos de hackeo o fraudes.
 
+---
 
-## Resumen Final del Montaje de Tienda.
+## Resumen Final de Montaje de Tienda con nuevas tecnologías.
 
 Como Resumen final de lo que podríamos tener en StarkNet, sería una plataforma descentralizada basada en tecnología de capa 2 y 3 que ofrece escalabilidad y privacidad a través de la utilización de contratos inteligentes y criptografía de prueba de conocimiento 0. En este documento, hemos explorarado un hipotético uso de cómo se puede utilizar StarkNet en la creación de una tienda en línea de juguetes de Anime, y cómo sus características únicas pueden mejorar la experiencia de compra de nuestros clientes, podríamos tener una tienda de juguetes en línea que utilice la tecnología de StarkNet en las capas 2 y 3. 
 
-Para llevar a cabo nuestro objetivo, utilizaremos contratos ERC3525 SlotEnumerable en la capa 2 de StarkNet. Los contratos ERC3525 SlotEnumerable son similares a los contratos ERC721 y ERC1155, que también son utilizados en la creación de juguetes no fungibles. Sin embargo, existen algunas diferencias clave entre estos contratos.
+Para llevar a cabo nuestro objetivo, utilizaremos contratos ERC3525 SlotEnumerable en la capa 2 de StarkNet. Los contratos ERC3525 SlotEnumerable son similares a los contratos ERC721 y ERC1155, qcomo hemos visto anteriormente y que también son utilizados en la creación de juguetes no fungibles. Sin embargo, existen algunas diferencias clave entre estos contratos.
 
 Mientras que los contratos ERC721 y ERC1155 permiten la creación de un juguete único y no fungible, los contratos ERC3525 SlotEnumerable permiten la creación de un conjunto de juguetes no fungibles que se pueden enumerar y recorrer de manera secuencial. Esto puede ser útil en nuestra tienda de juguetes de anime, ya que podríamos utilizar los contratos ERC3525 SlotEnumerable para llevar un registro de nuestros juguetes de Dragon Ball Z y Naruto y ofrecer descuentos y recompensas a nuestros clientes más leales. Además, implementaríamos Account Abstraction para mejorar la seguridad y simplificar el proceso de inicio de sesión de nuestros clientes.
 
