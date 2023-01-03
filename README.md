@@ -168,25 +168,23 @@ Ahora procederemos a crear dos ejemplos iguales para los 2 contratos. Crearemos 
 * [tokenSupplyInSlot](src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo#L163) es una función que nos permite conocer la cantidad de juguetes de una categoría específica. Al proporcionarle el índice del slot al que queremos acceder, podemos obtener el número total de juguetes en esa categoría.
 * [tokenInSlotByIndex](src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo#L171) es una función que nos permite acceder a un juguete específico dentro de una categoría. Al proporcionarle el índice del slot y el índice del juguete dentro de ese slot, podemos obtener información sobre el juguete en cuestión.
 
+**Así que procedi a crear los `SFT` con estos ajustes:** 
 
-Así que procedi a crear los `SFT` con estos ajustes:
+<p align="center">
+<img src="/im%C3%A1genes/mint1.png" width="350"> <img src="/im%C3%A1genes/mint2.png" width="350">
+<img src="/im%C3%A1genes/mint3.png" width="350"> <img src="/im%C3%A1genes/mint4.png" width="350">
 
-**`MintBurnable`**
-* [Mint ID 1](https://testnet.starkscan.co/tx/0x26836c2339ff4ccc5a70c315d2d9b61cb4cbeacd6c13df16309b32a590310b3) = Slot  1, Valor 25
-* [Mint ID 2](https://testnet.starkscan.co/tx/0xe6110df595214776c894269fc267674781864cdecb53d1f6f29f32887e6ffe) = Slot 1, Valor 10
-* [Mint ID 3](https://testnet.starkscan.co/tx/0x3703aa31eaa429fbdba8905955a9d6dd27cb18e44c4e1901e76b15ce6b2fcc) = Slot 2, Valor 500000000000
-* [Mint ID 4](https://testnet.starkscan.co/tx/0x406d7a7e73f68c807dc628511fe284de79799149f02bfa6a5098aadf237685f) = Slot 2, Valor 120
+<div align="center">
 
-![Graph](/im%C3%A1genes/mint1.png){:width="200px"} ![Graph](/im%C3%A1genes/mint2.png){:width="200px"} 
-![Graph](/im%C3%A1genes/mint3.png){:width="200px"} ![Graph](/im%C3%A1genes/mint4.png){:width="200px"}
+| **`MintBurnable`** | **`SlotEnumerableMintBurnable`** |
+|--------------------|-----------------------------------|
+| * [Mint ID 1](https://testnet.starkscan.co/tx/0x26836c2339ff4ccc5a70c315d2d9b61cb4cbeacd6c13df16309b32a590310b3) = Slot  1, Valor 25 | * [Mint ID 1](https://testnet.starkscan.co/tx/0x626fa54c2f577ebbba5bd0dc7b3ebc2c547667151b6494013d317c3118d419a) = Slot  1, Valor 25 |
+| * [Mint ID 2](https://testnet.starkscan.co/tx/0xe6110df595214776c894269fc267674781864cdecb53d1f6f29f32887e6ffe) = Slot 1, Valor 10 | * [Mint ID 2](https://testnet.starkscan.co/tx/0x3812b8f96bcb792612bac5a69c743c791b158dc9a4ff054bd0bfad39396be19) = Slot 1, Valor 10 | 
+| * [Mint ID 3](https://testnet.starkscan.co/tx/0x3703aa31eaa429fbdba8905955a9d6dd27cb18e44c4e1901e76b15ce6b2fcc) = Slot 2, Valor 500000000000 | * [Mint ID 3](https://testnet.starkscan.co/tx/0x18d811c6167951a8ba29c4128ee58cb5c7c4b2a900db466875de096f94195ed) = Slot 2, Valor 500000000000 |
+| * [Mint ID 4](https://testnet.starkscan.co/tx/0x406d7a7e73f68c807dc628511fe284de79799149f02bfa6a5098aadf237685f) = Slot 2, Valor 120 | * [Mint ID 4](https://testnet.starkscan.co/tx/0x1976e79e3fca6a660c1bc79e2d1be7e6b312bc7dc241cd626b830d2242ab198) = Slot 2, Valor 120
+</div>
 
-
-**`SlotEnumerableMintBurnable`**
-* [Mint ID 1](https://testnet.starkscan.co/tx/0x626fa54c2f577ebbba5bd0dc7b3ebc2c547667151b6494013d317c3118d419a) = Slot  1, Valor 25
-* [Mint ID 2](https://testnet.starkscan.co/tx/0x3812b8f96bcb792612bac5a69c743c791b158dc9a4ff054bd0bfad39396be19) = Slot 1, Valor 10
-* [Mint ID 3](https://testnet.starkscan.co/tx/0x18d811c6167951a8ba29c4128ee58cb5c7c4b2a900db466875de096f94195ed) = Slot 2, Valor 500000000000
-* [Mint ID 4](https://testnet.starkscan.co/tx/0x1976e79e3fca6a660c1bc79e2d1be7e6b312bc7dc241cd626b830d2242ab198) = Slot 2, Valor 120
-
+</p>
 
 
 User Wallet:
@@ -203,8 +201,7 @@ Total Slot 1 = 35
 Total Slot 2 = 500000000120 
 ```
 
-![Graph](/im%C3%A1genes/value1.png)
-![Graph](/im%C3%A1genes/value2.png)
+<img src="/im%C3%A1genes/value1.png" width="550"> <img src="/im%C3%A1genes/value2.png" width="350">
 
 ---
 ## Pruebas Finales 
