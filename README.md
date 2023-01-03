@@ -1,22 +1,22 @@
-# Nadai ERC 3535 en Starknet (Semi Fungibles Tokens)
+# ¿Qué son los SFTs (Semi Fungibles Tokens)? Los ERC 3525 están en Starknet.
 
-Buenas Amigos, ha llegado 2023 y como no, podemos empezar con alguna ideas de desarrollo hacia L3, recordamos que ya el L2022 ya ha pasado, es año del L32023 XD. Pero antes de extendernos sobre ideas más locas y detalles mas técnicos, iremos de distintas soluciones hasta llegar a esas ideas un poco mas innovadoras y complejas.
+Buenas Amigos, ha llegado 2023 y como no podía ser menos debemos empezar con algunas ideas de desarrollo hacia L3. ¿Porqué en L3? ¿Es necesario? La mayoría de las respuestas serán NO, no debemos de sobrecargar las red principal de ETH y seguridad con proyectos, protocolos o capas innecesarias desde ningun punto de vista. Ya que desde mi humilde opinión, podemos crear modelos de nogocios inservibles, envueltos en fomo y con otras expectativas que no tendrán su logro, esto puede ser debido a que aunque la tecnología subyacente sea exitosa, su proyecto no debe necesarimente tener que incorporarla, ni servirle, recordad siempre los grandes casos de `BTC`, por ejemplo, Satoshi creo `BTC` como moneda para un medio de pagos entre personas libre, sin terceros ni autoridades intermediarias, pero al final el mal uso de la tecnolgía ha llevado a muchos declives de proyectos por estas malas causas, pero no ha sido culpa de `BTC` X...
+
+Pero bueno, ya que vamos hablar sobre nuevas ideas, recordamos que el **`L2022`** ya ha pasado, es año del **`L32023`**, memes a parte XD, antes de extendernos sobre ideas más locas y detalles más técnicos, iremos entrando en contexto con distintas soluciones, como los `SFTs`, hasta llegar a esas ideas un poco mas innovadoras y complejas, como posibles soluciones en una `Layer 3`.
 
 ## ¿Qué son los SFTs y ERC 3525?
 
-Los ERC-3525 Semi-Fungible Token `SFT`, es un token estándar independiente de activos de uso general que impulsa la representación digital de última generación de propiedad, valor, derechos, estado e identidad. 
+El ERC-3525 Semi-Fungible Token `SFT`, es un token estándar independiente de activos de uso general que impulsa la representación digital de última generación de propiedad, valor, derechos, estado e identidad. 
 
-Este estándar introduce un <ID, SLOT, VALUE> modelo escalar triple que representa la estructura semifungible de un token. También introduce nuevos modelos de transferencia, así como modelos de aprobación que reflejan la naturaleza semifungible de los tokens.
-
-El token contiene una propiedad de ID equivalente a EIP-721 para identificarse como una entidad universalmente única, de modo que los tokens se puedan transferir entre direcciones y se aprueben para operar de manera compatible con EIP-721.
+Este estándar introduce un **`ID, SLOT, VALUE`** modelo escalar triple que representa la estructura semifungible de un token. También introduce nuevos modelos de transferencia, así como modelos de aprobación que reflejan la naturaleza semifungible de los tokens. El token contiene una propiedad de ID equivalente a EIP-721 para identificarse como una entidad universalmente única, de modo que los tokens se puedan transferir entre direcciones y se aprueben para operar de manera compatible con EIP-721.
 
 El significado de la propiedad `value` es muy similar al de la propiedad `saldo` de un token EIP-20. Cada token tiene un atributo de `slot`, lo que garantiza que el valor de dos tokens con la misma ranura se trate como fungible, lo que agrega fungibilidad a la propiedad de valor de los tokens.
 
-Reescribe la generación y el comercio de activos digitales, creando eficiencias y mejorando la integridad del mercado. Con él, los activos tradicionalmente ilíquidos, como bonos, acciones futuras, ABS, bienes raíces y energía renovable, pueden volverse divisibles, representados en la cadena y comercializados libremente en un mercado abierto.
+Según [SFTlabs](https://sftlabs.io/), proporciona a las empresas criptográficas/Web3 y a los protocolos del mañana la gama completa de recursos, financiamiento y soporte para lanzar activos digitales disruptivos de Web3 con tecnología del estándar de token semifungible ERC-3525, comenta lo siguiente:
 
-El ERC-721 es un estándar para tokens no fungibles `NFT`, lo que significa que cada uno de ellos es único y tiene su propio valor. Por otro lado, el ERC-3525 es una extensión del ERC-721 que agrega una capa adicional de lógica a la funcionalidad básica de tokens no fungibles.
+> Reescribe la generación y el comercio de activos digitales, creando eficiencias y mejorando la integridad del mercado. Con él, los activos tradicionalmente ilíquidos, como bonos, acciones futuras, ABS, bienes raíces y energía renovable, pueden volverse divisibles, representados en la cadena y comercializados libremente en un mercado abierto.
 
-Un ejemplo de uso del ERC-721 podría ser un juego en el que cada token representa un objeto único en el juego, como una espada mágica o un tesoro. Los jugadores podrían comprar y vender estos tokens entre ellos, y el valor de cada token dependería de su rareza y de su utilidad en el juego.
+Una de las diferencias posibles en una caso de uso con ERC-721, podría ser un juego en el que cada token representa un objeto único en el juego, como una espada mágica o un tesoro. Los jugadores podrían comprar y vender estos tokens entre ellos, y el valor de cada token dependería de su rareza y de su utilidad en el juego.
 
 En cambio, si se utiliza el ERC-3525, se podrían agregar características adicionales a cada token, como la posibilidad de dividir o fusionar tokens para crear nuevos tokens con características únicas. Por ejemplo, si en el juego anterior se utilizara el ERC-3525, podríamos fusionar dos espadas mágicas para crear una espada mágica aún más poderosa.
 
@@ -27,42 +27,46 @@ Algunos links sobre ERC3525
 * [EIP 3525](https://eips.ethereum.org/EIPS/eip-3525)
 * [SFTlabs](https://sftlabs.io/)
 
+---
+
 ### SFTs en Starknet
 
-Después de hacer varios `deploy` de algunos contratos y ver el potencial que podrian traer decidí analizar un poco más sobre ello, todo fue debido a  
+Después de hacer varios `deploy` de algunos contratos de este tipo y ver el potencial que podrian traer, decidí analizar un poco más su lógica y aprender un poco más sobre ello, vemos como siguen llegando todo tipo de código a `Cairo` e impulsando aún mas a soluciones de L2.
 
-Ahora que sabemos un poco más sobre los `SFTs` podemos ver un caso de uso en una de las soluciones de ETH en la `L2 de Starknet`, primero hablaremos un poco de como han migrado estos contratos a `Cairo` en el ecosistema de `Starknet`. Has sido el caso de `Carbonable`, que según sus documentos oficales abrieron la implementación de EIP-3525. La implementación se basa en la versión [Solidity ERC 3525](https://github.com/solv-finance/erc-3525/tree/main/contracts) de [Solv-protocol](https://twitter.com/SolvProtocol), cuyo equipo fue coautor del EIP, y estan tomando medidas para estandarizar la implementación de StarkNet.
+Ahora que sabemos un poco más sobre los `SFTs` podemos ver un caso de uso en `L2 de Starknet`. Primero hablaremos un poco de como han migrado estos contratos a `Cairo` en el ecosistema de `Starknet`. Ha sido el caso de `Carbonable`, que según sus documentos oficales abrieron la implementación de EIP-3525 en Starknet. La implementación se basa en la versión [Solidity ERC 3525](https://github.com/solv-finance/erc-3525/tree/main/contracts) de [Solv-protocol](https://twitter.com/SolvProtocol), cuyo equipo fue coautor del EIP, y estan tomando medidas para estandarizar la implementación de StarkNet.
 
-Recomendamos encarecidamente si quiere saber más sobre estos `SFTs` leer el siguiente artículo.
+**Recomendamos encarecidamente si quiere saber más sobre estos `SFTs` y grandes casos de uso como en DEFI, leer el siguiente artículo.**
 
 * [Carbonable Semi Fungible Tokens](https://carbonable.medium.com/semi-fungible-tokens-sfts-are-now-available-on-starknet-2e108594216f)
 
-
+---
 ## Nadai SFTs en Starknet
 
-Aquí realize algunas pruebas al respecto, sobre todo para distinguir entre dos versiones para su uso de idea final, puede revisar y crear sus propios `SFTs` clonando la guia de [Nadai ERC3525 Starknet] y haciendo los deploy. Aquí no nos extenderemos mucho para ver hasta donde llega el documetno xd....
+Aquí tuve que realizar algunas pruebas al respecto, sobre todo para distinguir entre dos versiones de contrato para su uso en una idea final, (que poco a poco iremos descubriendo). Podrá revisar y crear sus propios `SFTs` clonando la guia de [Nadai ERC3525 Starknet](https://github.com/Nadai2010/Nadai-ERC3525-Starknet) o en la [Repo Oficial Carbonable]y(https://github.com/Carbonable/carbonable-contracts) y haciendo los deploy de los contratos que decida. 
 
-Entre estos contratos tenemos 3 opciones, aunque hemos decidido analizar dos contratos. El [ERC3525MintableBurnable](/src/carbonable/erc3525/presets/ERC3525MintableBurnable.cairo) y el [ERC3525SlotEnumerableMintableBurnable](/src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo) para marcar las principales diferencias y así ver como pueden mejorar en la tecnología y en no saturar la red con lógicas implementaciones en soluciones innecesarias. 
+**Al final del documento dejaremos una mini sección para developer**
+
+Entre estos contratos tenemos 3 opciones, aunque hemos decidido analizar dos contratos. El [ERC3525MintableBurnable](/src/carbonable/erc3525/presets/ERC3525MintableBurnable.cairo) y el [ERC3525SlotEnumerableMintableBurnable](/src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo) para marcar las principales diferencias y así ver como pueden mejorar en la tecnología y en no saturar la L1 con lógicas e implementaciones en soluciones innecesarias. 
 
 El segundo contrato es prácticamente igual al primero, con la única diferencia de que incluye la librería `ERC3525SlotEnumerable` (que permite la implementación de una extensión de la funcionalidad de un token ERC721 llamada `enumerable slot`). La funcionalidad `enumerable slot` permite enumerar todos los tokens ERC721 existentes en el contrato y obtener información sobre un token específico por su índice en la lista.
 
 Un ejemplo de cómo este contrato podría ser útil podría ser el siguiente:
 
-## Tienda Online Anime Parte 1
+### Tienda Online Anime Parte 1
 
 Imagina que tienes una tienda de juguetes y quieres vender figuras de anime. Supongamos que quieres dividir tus figuras en diferentes categorías, como `Dragon Ball Z` y `Naruto`. Además, quieres poder contar cuántas figuras hay en cada categoría. En este caso, el contrato `ERC3525SlotEnumerableMintableBurnable` sería el adecuado. Puedes usar las funciones [slotByIndex](src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo#L156) y [tokenSupplyInSlot](src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo#L163) para acceder a las figuras en cada categoría y [tokenInSlotByIndex]src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo#L171) para contar cuántas figuras hay en cada categoría.
 
-Cada juguete sería un token único y no fungible, y cada token se asignaría a un slot específico basado en el anime al que pertenece. Por ejemplo, todos los juguetes de Dragon Ball Z estarían en el slot 0, todos los de Naruto estarían en el slot 1, y así sucesivamente.
+Cada juguete sería un token único y no fungible, y cada token se asignaría a un slot específico basado en el anime al que pertenece. Por ejemplo, todos los juguetes de Dragon Ball Z estarían en el slot 0, todos los de Naruto estarían en el slot 1, y así sucesivamente. 
 
-Pero ahora iremos mucho más haya, ya que lo queremos plasmar es como estos Token nos podrían ayudar más que en otra L2 u en L1 o en una solución centralizada.
+Pero ahora iremos mucho más haya, podríamos crear colecciones gigantes, pedidos inmensos o inclusive una parte en mercado libre, pero lo quiero plasmar es una idea de como los `SFTs` nos podrían ayudar más en una solución L2 como `Starknet` que en una L1 o en una solución centralizada. 
 
-## Tienda Online Anime Parte 2
 
-Para llevar a cabo nuestra tienda de juguetes de anime de manera eficiente y segura, podemos utilizar la plataforma StarkNet en las capas 2 y 3. En la capa 2, utilizaremos contratos ERC3525 SlotEnumerable para llevar un registro de nuestros juguetes de anime, como Dragon Ball y Naruto, y ofrecer descuentos y recompensas a nuestros clientes más leales. Estos contratos ERC3525 SlotEnumerable nos permiten enumerar nuestros juguetes de manera más sencilla y rápida que si utilizáramos contratos ERC721, lo que nos ayudará a escalar y procesar transacciones de manera más eficiente gracias a la utilización de zk-rollup.  
+---
+### Tienda Online Anime Parte 2
 
-**Transaciones** En la capa 2, utilizaremos contratos ERC3525 SlotEnumerable para llevar un registro de nuestros juguetes de anime, como Dragon Ball y Naruto, y ofrecer descuentos y recompensas a nuestros clientes más leales. Estos contratos ERC3525 SlotEnumerable nos permiten enumerar nuestros juguetes de manera más sencilla y rápida que si utilizáramos contratos ERC721, lo que nos ayudará a escalar y procesar transacciones de manera más eficiente gracias a la utilización de zk-rollup.
+Para llevar a cabo nuestra tienda de juguetes de anime de manera eficiente y segura, podemos utilizar la plataforma StarkNet en las capas 2 y 3. **Pero imagina ahora que esta idea se va haciendo realidad, que de verdad nos decidimos a crear nuestra tienda virtual, tenderemos que tener en cuenta transacciones, datos de usuarios, datos de empresas, Mmmm empieza a complicarse no??? L3 y ZKPs al rescate.** 
 
-Pero imagina ahora que esta idea se va haciendo realidad, que de verdad nos decidimos a realizarla, tenderemos que tener en cuenta transacciones, datos de usuarios, datos de empresas, mmmm demasiado no??? L3 y ZKPs al rescate. 
+**Transaciones** En la capa 2, utilizaremos contratos `ERC3525 SlotEnumerable` para llevar un registro de nuestros juguetes de anime, como `Dragon Ball Z` y `Naruto`, y ofrecer descuentos y recompensas a nuestros clientes más leales. Estos contratos ERC3525 SlotEnumerable nos permiten enumerar nuestros juguetes de manera más sencilla y rápida que si utilizáramos contratos ERC721, lo que nos ayudará a escalar y procesar transacciones de manera más eficiente gracias a la utilización de `zk-rollup`.  
 
 **Privacidad L3** En el caso de querer llevar a cabo una gestión interna privada de tu tienda, puedes utilizar tecnologías de privacidad en capa 3, como son Zero-Knowledge Proofs `ZKPs`. Los ZKPs te permiten probar la veracidad de una afirmación sin revelar información adicional.
 
@@ -70,30 +74,46 @@ Por ejemplo, si quieres comprobar que un cliente ha realizado más de 10 compras
 
 Por otro lado, en la capa 3, podemos utilizar zk-Starks para garantizar la privacidad de ciertos datos sensibles, como los montos totales gastados por cada cliente, nóminas de empleados... Esto nos permitiría ofrecer a nuestros clientes la opción de optar por ciertos descuentos y recompensas sin revelar su información personal a terceros, `ni a nuestro propios empleados`. Además, al utilizar `zk-Starks` en lugar de `zk-SNARKs`, podemos estar preparados para el futuro y la posible llegada de la computación cuántica, ya que zk-Starks son resistentes a ataques cuánticos.
 
-**Seguridad** Además de heredar la seguridad de la L1 de ETH en lo que son transacciones, saldos... podemos dejar un espacio extra para AA.
+**Seguridad** Además de heredar la seguridad de la L1 de ETH en lo que son transacciones, saldos y todo lo que tengamos ejecutado en L2... podemos dejar un espacio extra para AA.
 
-**Account Abstraction** Account abstraction aplicada a la Tienda, mejoraría la seguridad en el inicio de sesión en la cuenta de nuestra tienda de juguetes en línea. Esto nos permitiría utilizar contraseñas más seguras y protegidas gracias a la utilización de criptografía avanzada. Además, al utilizar account abstraction, podríamos garantizar que solo el propietario de la cuenta pueda acceder a ella y realizar transacciones, evitando posibles intentos de hackeo o fraudes.
+**Account Abstraction** aplicada a la Tienda, mejoraría la seguridad en el inicio de sesión en la cuenta de nuestra tienda de juguetes en línea. Esto nos permitiría utilizar contraseñas más seguras y protegidas gracias a la utilización de criptografía avanzada. Además, al utilizar account abstraction, podríamos garantizar que solo el propietario de la cuenta pueda acceder a ella y realizar transacciones, evitando posibles intentos de hackeo o fraudes.
 
 
- ## Tienda Online Parte 3 
+## Resumen Final del Montaje de Tienda.
 
 Como Resumen final de lo que podríamos tener en StarkNet, sería una plataforma descentralizada basada en tecnología de capa 2 y 3 que ofrece escalabilidad y privacidad a través de la utilización de contratos inteligentes y criptografía de prueba de conocimiento 0. En este documento, hemos explorarado un hipotético uso de cómo se puede utilizar StarkNet en la creación de una tienda en línea de juguetes de Anime, y cómo sus características únicas pueden mejorar la experiencia de compra de nuestros clientes, podríamos tener una tienda de juguetes en línea que utilice la tecnología de StarkNet en las capas 2 y 3. 
 
 Para llevar a cabo nuestro objetivo, utilizaremos contratos ERC3525 SlotEnumerable en la capa 2 de StarkNet. Los contratos ERC3525 SlotEnumerable son similares a los contratos ERC721 y ERC1155, que también son utilizados en la creación de juguetes no fungibles. Sin embargo, existen algunas diferencias clave entre estos contratos.
 
-Mientras que los contratos ERC721 y ERC1155 permiten la creación de un juguete único y no fungible, los contratos ERC3525 SlotEnumerable permiten la creación de un conjunto de juguetes no fungibles que se pueden enumerar y recorrer de manera secuencial. Esto puede ser útil en nuestra tienda de juguetes de anime, ya que podríamos utilizar los contratos ERC3525 SlotEnumerable para llevar un registro de nuestros juguetes de Dragon Ball y Naruto y ofrecer descuentos y recompensas a nuestros clientes más leales. Además, implementaríamos Account Abstraction para mejorar la seguridad y simplificar el proceso de inicio de sesión de nuestros clientes.
+Mientras que los contratos ERC721 y ERC1155 permiten la creación de un juguete único y no fungible, los contratos ERC3525 SlotEnumerable permiten la creación de un conjunto de juguetes no fungibles que se pueden enumerar y recorrer de manera secuencial. Esto puede ser útil en nuestra tienda de juguetes de anime, ya que podríamos utilizar los contratos ERC3525 SlotEnumerable para llevar un registro de nuestros juguetes de Dragon Ball Z y Naruto y ofrecer descuentos y recompensas a nuestros clientes más leales. Además, implementaríamos Account Abstraction para mejorar la seguridad y simplificar el proceso de inicio de sesión de nuestros clientes.
 
 En la capa 3, podríamos utilizar zk-Starks y ZKPs para garantizar la privacidad de ciertos datos sensibles, como los montos totales gastados por cada cliente o la información de los empleados de la tienda. Esto nos permitiría ofrecer a nuestros clientes la opción de optar por ciertos descuentos y recompensas sin revelar su información personal a terceros, así como proteger la privacidad de nuestros empleados.
 
 Al utilizar StarkNet en las capas 2 y 3, podemos aprovechar las ventajas de la escalabilidad, la simplicidad y la privacidad que ofrece esta plataforma. Con los contratos ERC3525 SlotEnumerable en la capa 2 y las pruebas de validez Starks en la capa 3, podemos ofrecer a nuestros clientes una experiencia de compra óptima y segura en nuestra tienda en línea de juguetes de anime. Además, al implementar Account Abstraction en la capa 2, podemos mejorar la seguridad y simplicidad del proceso de inicio de sesión de nuestros clientes.
 
+Mmmm Nuestra tienda virtual podría ampliarse a vender `FUNKO` de todos los tipos con contratos ajustados, haciendo pragmatica nuestra idea y empresa en un futuro.
 
-
-
+---
 
 ## Pruebas Developer
 
-Si quieren hacer el deploy de estos contratos repasar cualquiera de las [Nadai Guía Stark Min]() para tener los conceptos básicos y minimos para poder avanzar. Una vez decidido que tipo de contrato vamos ahcer el `deploy` deberemos declarar su `Class Hash` en nuestro caso pasaremos los ajuste realizados tanto para un código MintBurnable como para SlotEnumerableMintBurnable. Primero tendremos que hacer el compile.
+Si quieren hacer el deploy de estos contratos puede repasar cualquiera de las [Nadai Guía Stark Min]() para tener los conceptos básicos y minimos para poder avanzar. Una vez decidido que tipo de contrato vamos a necesitar para el `deploy`, deberemos hacer el `build` para compilar su contrato y poder declarar su `Class Hash`. En nuestro caso pasaremos los ajuste realizados tanto para un código [ERC3525MintableBurnable.cairo](/src/carbonable/erc3525/presets/ERC3525MintableBurnable.cairo) como para [ERC3525SlotEnumerableMintBurnable.cairo](/src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo). Primero tendremos que hacer el compile desde nuestro proyecto. 
+
+Primero clonaremos esta repo, e instaleremos si no las tenemos las librerias de [Contract OppenZepelin](https://github.com/OpenZeppelin/cairo-contracts).
+
+```bash
+gh repo clone Nadai2010/Nadai-ERC3525-Starknet
+```
+
+Y luego si no tenemos las librerias puede clonar o instalar las librerias oficiales haciendo en su terminal.
+
+
+```bash
+
+gh repo clone OpenZeppelin/cairo-contracts
+```
+
+Ahora ya podemos hacer el compile, que nos dará el `Class Hash` de todos nuestros contratos, ya que lo tenemos definido así en el [protostar.toml](/protostar.toml)
 
 ```
 protostar build
@@ -102,7 +122,13 @@ protostar build
 ![Graph]
 
 
+---
 
+Dejaremos los comandos y herramientas utilizadas para hacer el deploy, en ambos casos ha sido igual solo hemos cambiado el nombre del `Simbolo` que  ha sido distinto entre ambos `deploy` cuando lo pasamos a `felt` con la herramienta [Stark Utils](https://www.stark-utils.xyz/converter). El constructor nos pide 3 argumentos que son (Nombre, Simbolo, Decimales), que usaremos en esta guía usando el Universal Deploy Contract de Starknet [UDC](https://testnet.starkscan.co/contract/0x041a78e741e5af2fec34b695679bc6891742439f7afb8484ecd7766661ad02bf#write-contract), pero primero declararemos nuestro contrato usando el siguiente comando.
+
+```bash
+protostar -p testnet declare ./build/ERC3525MintableBurnable.json --max-fee auto
+```
 ### MintableBurnable
 
 protostar -p testnet declare ./build/ERC3525MintableBurnable.json --max-fee auto
