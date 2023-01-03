@@ -177,6 +177,10 @@ Así que procedi a crear los `SFT` con estos ajustes:
 * [Mint ID 3](https://testnet.starkscan.co/tx/0x3703aa31eaa429fbdba8905955a9d6dd27cb18e44c4e1901e76b15ce6b2fcc) = Slot 2, Valor 500000000000
 * [Mint ID 4](https://testnet.starkscan.co/tx/0x406d7a7e73f68c807dc628511fe284de79799149f02bfa6a5098aadf237685f) = Slot 2, Valor 120
 
+![Graph](/im%C3%A1genes/mint1.png) ![Graph](/im%C3%A1genes/mint2.png) 
+![Graph](/im%C3%A1genes/mint3.png) ![Graph](/im%C3%A1genes/mint4.png)
+
+
 **`SlotEnumerableMintBurnable`**
 * [Mint ID 1](https://testnet.starkscan.co/tx/0x626fa54c2f577ebbba5bd0dc7b3ebc2c547667151b6494013d317c3118d419a) = Slot  1, Valor 25
 * [Mint ID 2](https://testnet.starkscan.co/tx/0x3812b8f96bcb792612bac5a69c743c791b158dc9a4ff054bd0bfad39396be19) = Slot 1, Valor 10
@@ -196,8 +200,13 @@ User Wallet:
 ║ 2    ║        4 ║           120 ║
 ╚══════╩══════════╩═══════════════╝
 ```
+
 Total Slot 1 = 35
 Total Slot 2 = 500000000120 
+
+![Graph](/im%C3%A1genes/value1.png)
+![Graph](/im%C3%A1genes/value2.png)
+
 -----------
 
 
