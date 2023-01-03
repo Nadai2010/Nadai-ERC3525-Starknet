@@ -67,17 +67,17 @@ Pero ahora iremos mucho más haya, podríamos crear colecciones gigantes, pedido
 
 Para llevar a cabo nuestra tienda de juguetes de anime de manera eficiente y segura, podemos utilizar la plataforma StarkNet en las capas 2 y 3. **Pero imagina ahora que esta idea se va haciendo realidad, que de verdad nos decidimos a crear nuestra tienda virtual, tenderemos que tener en cuenta transacciones, datos de usuarios, datos de empresas, Mmmm empieza a complicarse no??? L3 y ZKPs al rescate.** 
 
-**Transaciones** En la capa 2, utilizaremos contratos `ERC3525 SlotEnumerable` para llevar un registro de nuestros juguetes de anime, como `Dragon Ball Z` y `Naruto`, y ofrecer descuentos y recompensas a nuestros clientes más leales. Estos contratos ERC3525 SlotEnumerable nos permiten enumerar nuestros juguetes de manera más sencilla y rápida que si utilizáramos contratos ERC721, lo que nos ayudará a escalar y procesar transacciones de manera más eficiente gracias a la utilización de `zk-rollup`.  
+* **Transaciones** En la capa 2, utilizaremos contratos `ERC3525 SlotEnumerable` para llevar un registro de nuestros juguetes de anime, como `Dragon Ball Z` y `Naruto`, y ofrecer descuentos y recompensas a nuestros clientes más leales. Estos contratos ERC3525 SlotEnumerable nos permiten enumerar nuestros juguetes de manera más sencilla y rápida que si utilizáramos contratos ERC721, lo que nos ayudará a escalar y procesar transacciones de manera más eficiente gracias a la utilización de `zk-rollup`.  
 
-**Privacidad L3** En el caso de querer llevar a cabo una gestión interna privada de tu tienda, puedes utilizar tecnologías de privacidad en capa 3, como son Zero-Knowledge Proofs `ZKPs`. Los ZKPs te permiten probar la veracidad de una afirmación sin revelar información adicional.
+* **Privacidad L3** En el caso de querer llevar a cabo una gestión interna privada de tu tienda, puedes utilizar tecnologías de privacidad en capa 3, como son Zero-Knowledge Proofs `ZKPs`. Los ZKPs te permiten probar la veracidad de una afirmación sin revelar información adicional.
 
 Por ejemplo, si quieres comprobar que un cliente ha realizado más de 10 compras sin revelar cuántas compras ha realizado exactamente, puedes utilizar un ZKP para verificar que ha realizado más de 10 compras sin revelar la cantidad exacta. De esta manera, puedes utilizar la privacidad en tu gestión interna sin revelar información innecesaria a terceros.
 
 Por otro lado, en la capa 3, podemos utilizar zk-Starks para garantizar la privacidad de ciertos datos sensibles, como los montos totales gastados por cada cliente, nóminas de empleados... Esto nos permitiría ofrecer a nuestros clientes la opción de optar por ciertos descuentos y recompensas sin revelar su información personal a terceros, `ni a nuestro propios empleados`. Además, al utilizar `zk-Starks` en lugar de `zk-Snarks`, podemos estar preparados para el futuro y la posible llegada de la computación cuántica, ya que zk-Starks son resistentes a ataques cuánticos.
 
-**Seguridad** Además de heredar la seguridad de la L1 de ETH en lo que son transacciones, saldos y todo lo que tengamos ejecutado en L2... podemos dejar un espacio extra para AA.
+* **Seguridad** Además de heredar la seguridad de la L1 de ETH en lo que son transacciones, saldos y todo lo que tengamos ejecutado en L2... podemos dejar un espacio extra para AA.
 
-**Account Abstraction** aplicada a la Tienda, mejoraría la seguridad en el inicio de sesión en la cuenta de nuestra tienda de juguetes en línea. Esto nos permitiría utilizar contraseñas más seguras y protegidas gracias a la utilización de criptografía avanzada. Además, al utilizar account abstraction, podríamos garantizar que solo el propietario de la cuenta pueda acceder a ella y realizar transacciones, evitando posibles intentos de hackeo o fraudes.
+* **Account Abstraction** aplicada a la Tienda, mejoraría la seguridad en el inicio de sesión en la cuenta de nuestra tienda de juguetes en línea. Esto nos permitiría utilizar contraseñas más seguras y protegidas gracias a la utilización de criptografía avanzada. Además, al utilizar account abstraction, podríamos garantizar que solo el propietario de la cuenta pueda acceder a ella y realizar transacciones, evitando posibles intentos de hackeo o fraudes.
 
 
 ## Resumen Final del Montaje de Tienda.
