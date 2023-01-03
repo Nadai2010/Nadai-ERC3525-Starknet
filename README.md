@@ -207,6 +207,19 @@ Total Slot 2 = 500000000120
 ![Graph](/im%C3%A1genes/value1.png)
 ![Graph](/im%C3%A1genes/value2.png)
 
+---
+## Pruebas Finales 
+
+Podemos repasar como nuestro segundo contrato puede verificar por cada ranura cuantas figuras hay en una categoria, y como con la categoría y el juguete especifico nos puede dar el id del articulo o cliente, con el cual se podría tener una mejor base de datos organizada para empezar a diseñar nuestra `GRAN TIENDA VIRTUAL`.
+
 -----------
 
+## Verificación Starkscan
 
+Como tarea extra podemos dejar verificado nuestro contrato en `Starkscan`, para ello debemos de tener instalada y guardado el contrato que acabamos de hacer el `Deploy`. Ejecutamos el siguiente comando, escogemos el `ERC3525SlotEnumerablMintableBurnable.cairo` y vamos siguiendo los pasos. En el paso de liberia indicar `src` o `lib` como ruta en caso de error.
+
+```bash
+starkscan
+```
+
+![Graph](/im%C3%A1genes/lib.png)
