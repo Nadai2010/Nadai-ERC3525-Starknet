@@ -23,7 +23,7 @@ Según [SFTlabs](https://sftlabs.io/), un laboratorio que proporciona a las empr
 
 En resumen, la principal diferencia entre el ERC-721 y el ERC-3525 es que el segundo agrega una capa adicional de lógica y funcionalidad a los tokens no fungibles, lo que permite a los desarrolladores crear tokens más complejos y personalizados.
 
-Algunos links sobre ERC3525
+Algunos links sobre ERC3525:
 
 * [EIP 3525](https://eips.ethereum.org/EIPS/eip-3525)
 * [SFTlabs](https://sftlabs.io/)
