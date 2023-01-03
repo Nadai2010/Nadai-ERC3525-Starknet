@@ -1,6 +1,4 @@
-# ¿Qué son los SFTs (Semi Fungibles Tokens)? 
-
-[StarkWare](https://starkware.co) <img src="https://media2.giphy.com/media/9x55tYxEVrI04pKHl1/giphy.gif" width="30">
+# ¿Qué son los SFTs (Semi Fungibles Tokens)? <img src="https://media2.giphy.com/media/9x55tYxEVrI04pKHl1/giphy.gif" width="60">
 
 ## Los ERC-3525 están en Starknet.
 
@@ -65,8 +63,6 @@ Un ejemplo de cómo este contrato podría ser útil podría ser el siguiente:
 Imagina que tienes una tienda de juguetes y quieres vender figuras de anime. Supongamos que quieres dividir tus figuras en diferentes categorías, como `Dragon Ball Z` y `Naruto`. 
 
 <img align='center' src="https://media0.giphy.com/media/SV0LuYdSMmKEklpZKs/giphy.gif" width="230">
-
-https://camo.githubusercontent.com/7e111b98f8f89e7dbd9f3d7bef2d5cb1e9e4cd1336b57b5a8ed4a271bdbce50d/68747470733a2f2f6d65646961302e67697068792e636f6d2f6d656469612f5356304c755964534d6d4b456b6c705a4b732f67697068792e676966
 
 Además, quieres poder contar cuántas figuras hay en cada categoría. En este caso, el contrato `ERC3525SlotEnumerableMintableBurnable` sería el adecuado. Puedes usar las funciones [slotByIndex](src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo#L156) y [tokenSupplyInSlot](src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo#L163) para acceder a las figuras en cada categoría y [tokenInSlotByIndex]src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo#L171) para contar cuántas figuras hay en cada categoría.
 
