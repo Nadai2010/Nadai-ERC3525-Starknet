@@ -17,9 +17,9 @@ Según [SFTlabs](https://sftlabs.io/), un laboratorio que proporciona a las empr
 
 > Reescribe la generación y el comercio de activos digitales, creando eficiencias y mejorando la integridad del mercado. Con él, los activos tradicionalmente ilíquidos, como bonos, acciones futuras, ABS, bienes raíces y energía renovable, pueden volverse divisibles, representados en la cadena y comercializados libremente en un mercado abierto.
 
-Una de las diferencias posibles en una caso de uso con ERC-721, podría ser un juego en el que cada token representa un objeto único en el juego, como una espada mágica o un tesoro. Los jugadores podrían comprar y vender estos tokens entre ellos, y el valor de cada token dependería de su rareza y de su utilidad en el juego.
+> Una de las diferencias posibles en una caso de uso con ERC-721, podría ser un juego en el que cada token representa un objeto único en el juego, como una espada mágica o un tesoro. Los jugadores podrían comprar y vender estos tokens entre ellos, y el valor de cada token dependería de su rareza y de su utilidad en el juego.
 
-En cambio, si se utiliza el ERC-3525, se podrían agregar características adicionales a cada token, como la posibilidad de dividir o fusionar tokens para crear nuevos tokens con características únicas. Por ejemplo, si en el juego anterior se utilizara el ERC-3525, podríamos fusionar dos espadas mágicas para crear una espada mágica aún más poderosa.
+> En cambio, si se utiliza el ERC-3525, se podrían agregar características adicionales a cada token, como la posibilidad de dividir o fusionar tokens para crear nuevos tokens con características únicas. Por ejemplo, si en el juego anterior se utilizara el ERC-3525, podríamos fusionar dos espadas mágicas para crear una espada mágica aún más poderosa.
 
 En resumen, la principal diferencia entre el ERC-721 y el ERC-3525 es que el segundo agrega una capa adicional de lógica y funcionalidad a los tokens no fungibles, lo que permite a los desarrolladores crear tokens más complejos y personalizados.
 
