@@ -15,7 +15,6 @@ artifacts
 
 # Protostar
 build
-openzeppelin
 *logs.json
 
 .DS_Store
