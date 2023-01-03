@@ -166,7 +166,7 @@ Ahora procederemos a crear dos ejemplos iguales para los 2 contratos. Crearemos 
 
 * [slotByIndex](src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo#L156) es una función que se utiliza para acceder a uno de los slots del contrato ERC3525 SlotEnumerable. Cada slot representa una categoría por ejemplo de juguetes, y al utilizar esta función podemos obtener información sobre la categoría específica a la que estamos accediendo.
 * [tokenSupplyInSlot](src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo#L163) es una función que nos permite conocer la cantidad de juguetes de una categoría específica. Al proporcionarle el índice del slot al que queremos acceder, podemos obtener el número total de juguetes en esa categoría.
-* [tokenInSlotByIndex]src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo#L171) es una función que nos permite acceder a un juguete específico dentro de una categoría. Al proporcionarle el índice del slot y el índice del juguete dentro de ese slot, podemos obtener información sobre el juguete en cuestión.
+* [tokenInSlotByIndex](src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo#L171) es una función que nos permite acceder a un juguete específico dentro de una categoría. Al proporcionarle el índice del slot y el índice del juguete dentro de ese slot, podemos obtener información sobre el juguete en cuestión.
 
 
 Así que procedi a crear los `SFT` con estos ajustes:
@@ -186,6 +186,7 @@ Así que procedi a crear los `SFT` con estos ajustes:
 
 
 User Wallet:
+```bash
 ╔══════╦══════════╦═══════════════╗
 ║ SLOT ║ TOKEN_ID ║     VALUE     ║
 ╠══════╬══════════╬═══════════════╣
@@ -194,7 +195,7 @@ User Wallet:
 ║ 2    ║        3 ║  500000000000 ║
 ║ 2    ║        4 ║           120 ║
 ╚══════╩══════════╩═══════════════╝
-
+```
 Total Slot 1 = 35
 Total Slot 2 = 500000000120 
 -----------
