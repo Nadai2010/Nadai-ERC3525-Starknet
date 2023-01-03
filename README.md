@@ -201,7 +201,7 @@ Total Slot 1 = 35
 Total Slot 2 = 500000000120 
 ```
 
-<img src="/im%C3%A1genes/value1.png" width="550"> <img src="/im%C3%A1genes/value2.png" width="350">
+<img src="/im%C3%A1genes/value1.png" width="350"> <img src="/im%C3%A1genes/value2.png" width="350">
 
 ---
 ## Pruebas Finales 
