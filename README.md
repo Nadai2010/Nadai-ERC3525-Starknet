@@ -8,7 +8,9 @@
 
 <div align="center">
   <h1 style="font-size: larger;">
-    <img src="https://media2.giphy.com/media/9x55tYxEVrI04pKHl1/giphy.gif" width="80"> <strong>Los ERC-3525 están en Starknet.</strong> <img src="imágenes/Starknet.png" width="60">
+    <img src="https://media2.giphy.com/media/9x55tYxEVrI04pKHl1/giphy.gif" width="80">
+    <strong>Los ERC-3525 están en Starknet.</strong> 
+    <img src="imágenes/Starknet.png" width="60">
   </h1>
 </div>
 
