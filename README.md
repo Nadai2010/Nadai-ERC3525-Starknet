@@ -14,7 +14,7 @@
   </h1>
 </div>
 
-Buenas Amigos, ha llegado 2023 y como no podía ser menos debemos empezar con algunas ideas de desarrollo hacia L3. ¿Porqué en L3? ¿Es necesario? La mayoría de las respuestas serán NO, no debemos de sobrecargar las red principal de ETH y seguridad con proyectos, protocolos o capas innecesarias desde ningún punto de vista. Ya que desde mi humilde opinión, podemos crear modelos de negocios inservibles, envueltos en fomo y con otras expectativas que no tendrán su logro, esto puede ser debido a que aunque la tecnología subyacente sea exitosa, su proyecto no debe necesarimente tener que incorporarla, ni servirle, recordad siempre los grandes casos de `BTC`, por ejemplo, Satoshi creo `BTC` como moneda para un medio de pagos entre personas libre, sin terceros ni autoridades intermediarias, pero al final el mal uso de la tecnolgía ha llevado a muchos declives de proyectos por estas malas causas, pero no ha sido culpa de `BTC` 🤣🤣...
+Buenas Amigos, ha llegado 2023 y como no podía ser menos debemos empezar con algunas ideas de desarrollo hacia L3. ¿Porqué en L3? ¿Es necesario? La mayoría de las respuestas serán NO, no debemos de sobrecargar las red principal de ETH y seguridad con proyectos, protocolos o capas innecesarias desde ningún punto de vista. Ya que desde mi humilde opinión, podemos crear modelos de negocios inservibles, envueltos en fomo y con otras expectativas que no tendrán su logro, esto puede ser debido a que aunque la tecnología subyacente sea exitosa, su proyecto no debe necesariamente tener que incorporarla, ni servirle, recordad siempre los grandes casos de `BTC`, por ejemplo, Satoshi creo `BTC` como moneda para un medio de pagos entre personas libre, sin terceros ni autoridades intermediarias, pero al final el mal uso de la tecnología ha llevado a muchos declives de proyectos por estas malas causas, pero no ha sido culpa de `BTC` 🤣🤣...
 
 Pero bueno, ya que vamos hablar sobre nuevas ideas, recordamos que el **`L2022`** ya ha pasado, es año del **`L32023`**, memes a parte XD, antes de extendernos sobre ideas más locas y detalles más técnicos, iremos entrando en contexto con distintas soluciones, como los `SFTs`, hasta llegar a esas ideas un poco mas innovadoras y complejas, como posibles soluciones en una `Layer 3`.
 
@@ -58,7 +58,7 @@ Ahora que sabemos un poco más sobre los `SFTs` podemos ver un caso de uso en `L
 ---
 ## Nadai SFTs en Starknet
 
-Aquí tuve que realizar algunas pruebas al respecto, sobre todo para distinguir entre dos versiones de contrato para su uso en una idea final, (que poco a poco iremos descubriendo). Podrá revisar y crear sus propios `SFTs` clonando la guia de [Nadai ERC3525 Starknet](https://github.com/Nadai2010/Nadai-ERC3525-Starknet) o en la [Repo Oficial Carbonable](https://github.com/Carbonable/carbonable-contracts) y haciendo los deploy de los contratos que usted decida. 
+Aquí tuve que realizar algunas pruebas al respecto, sobre todo para distinguir entre dos versiones de contrato para su uso en una idea final, (que poco a poco iremos descubriendo). Podrá revisar y crear sus propios `SFTs` clonando la guía de [Nadai ERC3525 Starknet](https://github.com/Nadai2010/Nadai-ERC3525-Starknet) o en la [Repo Oficial Carbonable](https://github.com/Carbonable/carbonable-contracts) y haciendo los deploy de los contratos que usted decida. 
 
 **[`Al final del documento dejaremos una mini sección para developer`](https://github.com/Nadai2010/Nadai-ERC3525-Starknet#pruebas-developer)**
 
@@ -91,7 +91,7 @@ Pero ahora iremos mucho más haya, podríamos crear colecciones gigantes, pedido
 
 Para llevar a cabo nuestra tienda de juguetes de anime de manera eficiente y segura, podemos utilizar la plataforma StarkNet en las capas 2 y 3. **Pero imagina ahora que esta idea se va haciendo realidad, que de verdad nos decidimos a crear nuestra tienda virtual, tenderemos que tener en cuenta transacciones, datos de usuarios, datos de empresas, Mmmm empieza a complicarse no??? L3 y ZKPs al rescate.** 
 
-* **Transaciones** En la capa 2, utilizaremos contratos `ERC3525 SlotEnumerable` para llevar un registro de nuestros juguetes de anime, como `Dragon Ball Z` y `Naruto`, y ofrecer descuentos y recompensas a nuestros clientes más leales. Estos contratos ERC3525 SlotEnumerable nos permiten enumerar nuestros juguetes de manera más sencilla y rápida que si utilizáramos contratos ERC721, lo que nos ayudará a escalar y procesar transacciones de manera más eficiente gracias a la utilización de `zk-rollup`.  
+* **Transacciones** En la capa 2, utilizaremos contratos `ERC3525 SlotEnumerable` para llevar un registro de nuestros juguetes de anime, como `Dragon Ball Z` y `Naruto`, y ofrecer descuentos y recompensas a nuestros clientes más leales. Estos contratos ERC3525 SlotEnumerable nos permiten enumerar nuestros juguetes de manera más sencilla y rápida que si utilizáramos contratos ERC721, lo que nos ayudará a escalar y procesar transacciones de manera más eficiente gracias a la utilización de `zk-rollup`.  
 
 * **Privacidad L3** En el caso de querer llevar a cabo una gestión interna privada de tu tienda, puedes utilizar tecnologías de privacidad en capa 3, como son Zero-Knowledge Proofs `ZKPs`. Los ZKPs te permiten probar la veracidad de una afirmación sin revelar información adicional.
 
@@ -107,9 +107,9 @@ Por otro lado, en la capa 3, podemos utilizar zk-Starks para garantizar la priva
 
 ## Resumen Final de Montaje de Tienda con nuevas tecnologías.
 
-Como Resumen final de lo que podríamos tener en StarkNet, sería una plataforma descentralizada basada en tecnología de capa 2 y 3 que ofrece escalabilidad y privacidad a través de la utilización de contratos inteligentes y criptografía de prueba de conocimiento 0. En este documento, hemos explorarado un hipotético uso de cómo se puede utilizar StarkNet en la creación de una tienda en línea de juguetes de Anime, y cómo sus características únicas pueden mejorar la experiencia de compra de nuestros clientes, podríamos tener una tienda de juguetes en línea que utilice la tecnología de StarkNet en las capas 2 y 3. 
+Como Resumen final de lo que podríamos tener en StarkNet, sería una plataforma descentralizada basada en tecnología de capa 2 y 3 que ofrece escalabilidad y privacidad a través de la utilización de contratos inteligentes y criptografía de prueba de conocimiento 0. En este documento, hemos explorado un hipotético uso de cómo se puede utilizar StarkNet en la creación de una tienda en línea de juguetes de Anime, y cómo sus características únicas pueden mejorar la experiencia de compra de nuestros clientes, podríamos tener una tienda de juguetes en línea que utilice la tecnología de StarkNet en las capas 2 y 3. 
 
-Para llevar a cabo nuestro objetivo, utilizaremos contratos ERC3525 SlotEnumerable en la capa 2 de StarkNet. Los contratos ERC3525 SlotEnumerable son similares a los contratos ERC721 y ERC1155, qcomo hemos visto anteriormente y que también son utilizados en la creación de juguetes no fungibles. Sin embargo, existen algunas diferencias clave entre estos contratos.
+Para llevar a cabo nuestro objetivo, utilizaremos contratos ERC3525 SlotEnumerable en la capa 2 de StarkNet. Los contratos ERC3525 SlotEnumerable son similares a los contratos ERC721 y ERC1155, que como hemos visto anteriormente y que también son utilizados en la creación de juguetes no fungibles. Sin embargo, existen algunas diferencias clave entre estos contratos.
 
 Mientras que los contratos ERC721 y ERC1155 permiten la creación de un juguete único y no fungible, los contratos ERC3525 SlotEnumerable permiten la creación de un conjunto de juguetes no fungibles que se pueden enumerar y recorrer de manera secuencial. Esto puede ser útil en nuestra tienda de juguetes de anime, ya que podríamos utilizar los contratos ERC3525 SlotEnumerable para llevar un registro de nuestros juguetes de Dragon Ball Z y Naruto y ofrecer descuentos y recompensas a nuestros clientes más leales. Además, implementaríamos Account Abstraction para mejorar la seguridad y simplificar el proceso de inicio de sesión de nuestros clientes.
 
@@ -127,7 +127,7 @@ Si quieren hacer el deploy de estos contratos puede repasar cualquiera de las [N
 
 Una vez decidido que tipo de contrato vamos a necesitar para el `deploy`, deberemos hacer el `build` para compilar su contrato y poder declarar su `Class Hash`. En nuestro caso pasaremos los ajuste realizados tanto para un código [ERC3525MintableBurnable.cairo](/src/carbonable/erc3525/presets/ERC3525MintableBurnable.cairo) como para [ERC3525SlotEnumerableMintBurnable.cairo](/src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo). Primero tendremos que hacer el compile desde nuestro proyecto. 
 
-Primero clonaremos esta repo, e instaleremos si no las tenemos las librerias de [Contract OppenZepelin](https://github.com/OpenZeppelin/cairo-contracts).
+Primero clonaremos esta repo, e instalaremos si no las tenemos las librerías de [Contract OppenZepelin](https://github.com/OpenZeppelin/cairo-contracts).
 
 ```bash
 gh repo clone Nadai2010/Nadai-ERC3525-Starknet
@@ -154,7 +154,7 @@ protostar build
 
 ### Compile de MintableBurnable y SlotEnumerableMintableBurnable.
 
-Dejaremos los comandos y herramientas utilizadas para hacer el deploy, en ambos casos ha sido igual y solo hemos cambiado el nombre del `Simbolo` que  ha sido distinto entre ambos `deploy` cuando lo convettimos a `felt` con la herramienta [Stark Utils](https://www.stark-utils.xyz/converter). El constructor nos pide 3 argumentos que son (Nombre, Simbolo, Decimales), que usaremos en esta guía usando el Universal Deploy Contract de Starknet [UDC](https://testnet.starkscan.co/contract/0x041a78e741e5af2fec34b695679bc6891742439f7afb8484ecd7766661ad02bf#write-contract), pero primero declararemos nuestro contrato usando el siguiente comando.
+Dejaremos los comandos y herramientas utilizadas para hacer el deploy, en ambos casos ha sido igual y solo hemos cambiado el nombre del `Simbolo` que  ha sido distinto entre ambos `deploy` cuando lo convertimos a `felt` con la herramienta [Stark Utils](https://www.stark-utils.xyz/converter). El constructor nos pide 3 argumentos que son (Nombre, Simbolo, Decimales), que usaremos en esta guía usando el Universal Deploy Contract de Starknet [UDC](https://testnet.starkscan.co/contract/0x041a78e741e5af2fec34b695679bc6891742439f7afb8484ecd7766661ad02bf#write-contract), pero primero declararemos nuestro contrato usando el siguiente comando.
 
 ```bash
 protostar -p testnet declare ./build/ERC3525MintableBurnable.json --max-fee auto
@@ -178,7 +178,7 @@ protostar -p testnet declare ./build/ERC3525SlotEnumerableMintableBurnable.json 
 
 ### Deploy de MintableBurnable y SlotEnumerableMintableBurnable.
 
-Aquí podra escoger que contrato se adapta mejor a sus necesidades para poder hacer el deploy. en este caso les dejaremos los resultados de ambos deploy para poder por último ver las diferencia entres ambos. Usaremos el [UDC](https://testnet.starkscan.co/contract/0x041a78e741e5af2fec34b695679bc6891742439f7afb8484ecd7766661ad02bf#write-contract) oficial para nuestro esfuerzos mínimos, en el que tendremos que pasar `Class Hash` y los argumentos del contructor `Nombre, Simbolo, Decimales` que describimos arriba.
+Aquí podrá escoger que contrato se adapta mejor a sus necesidades para poder hacer el deploy. en este caso les dejaremos los resultados de ambos deploy para poder por último ver las diferencia entres ambos. Usaremos el [UDC](https://testnet.starkscan.co/contract/0x041a78e741e5af2fec34b695679bc6891742439f7afb8484ecd7766661ad02bf#write-contract) oficial para nuestro esfuerzos mínimos, en el que tendremos que pasar `Class Hash` y los argumentos del constructor `Nombre, Simbolo, Decimales` que describimos arriba.
 
 ![Graph](/im%C3%A1genes/deploymint.png)
 
@@ -191,13 +191,13 @@ Aquí podra escoger que contrato se adapta mejor a sus necesidades para poder ha
 * [Contract ERC 3525 SlotEnumerableMintBurn](https://testnet.starkscan.co/contract/0x0779c7fc964520c6bb70d3be54b69ec2c6b020e1243282e37296179d39508ff3)
 
 
-Ahora procederemos a crear dos ejemplos iguales para los 2 contratos. Crearemos 4 mint de SFT, 2 en el `Slot 1` y 2 en el `Slot 2`, en ambos ejemplos con mismos valores y luego comprobaremos las principales diferencias, supomgamos que fuera el ejemplo de la juguetería para explicar los ejemplos. 
+Ahora procederemos a crear dos ejemplos iguales para los 2 contratos. Crearemos 4 mint de SFT, 2 en el `Slot 1` y 2 en el `Slot 2`, en ambos ejemplos con mismos valores y luego comprobaremos las principales diferencias, supongamos que fuera el ejemplo de la juguetería para explicar los ejemplos. 
 
 * [slotByIndex](src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo#L156) es una función que se utiliza para acceder a uno de los slots del contrato ERC3525 SlotEnumerable. Cada slot representa una categoría por ejemplo de juguetes, y al utilizar esta función podemos obtener información sobre la categoría específica a la que estamos accediendo.
 * [tokenSupplyInSlot](src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo#L163) es una función que nos permite conocer la cantidad de juguetes de una categoría específica. Al proporcionarle el índice del slot al que queremos acceder, podemos obtener el número total de juguetes en esa categoría.
 * [tokenInSlotByIndex](src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo#L171) es una función que nos permite acceder a un juguete específico dentro de una categoría. Al proporcionarle el índice del slot y el índice del juguete dentro de ese slot, podemos obtener información sobre el juguete en cuestión.
 
-**Así que procedi a crear los `SFT` con estos ajustes:** 
+**Así que procedí a crear los `SFT` con estos ajustes:** 
 
 <p align="center">
 <img src="/im%C3%A1genes/mint1.png" width="350"> <img src="/im%C3%A1genes/mint2.png" width="350">
@@ -235,7 +235,7 @@ Total Slot 2 = 500000000120
 ---
 ## Pruebas Finales 
 
-Podemos repasar como nuestro segundo contrato puede verificar por cada ranura cuantas figuras hay en una categoria, y como con la categoría y el juguete especifico nos puede dar el id del articulo o cliente, con el cual se podría tener una mejor base de datos organizada para empezar a diseñar nuestra `GRAN TIENDA VIRTUAL`.
+Podemos repasar como nuestro segundo contrato puede verificar por cada ranura cuantas figuras hay en una categoría, y como con la categoría y el juguete especifico nos puede dar el id del articulo o cliente, con el cual se podría tener una mejor base de datos organizada para empezar a diseñar nuestra `GRAN TIENDA VIRTUAL`.
 
 ![Graph](/im%C3%A1genes/read.png)
 
@@ -243,7 +243,7 @@ Podemos repasar como nuestro segundo contrato puede verificar por cada ranura cu
 
 ## Verificación Starkscan
 
-Como tarea extra podemos dejar verificado nuestro contrato en `Starkscan`, para ello debemos de tener instalada y guardado el contrato que acabamos de hacer el `Deploy`. Ejecutamos el siguiente comando, escogemos el `ERC3525SlotEnumerablMintableBurnable.cairo` y vamos siguiendo los pasos. En el paso de liberia indicar `src` o `lib` como ruta en caso de error.
+Como tarea extra podemos dejar verificado nuestro contrato en `Starkscan`, para ello debemos de tener instalada y guardado el contrato que acabamos de hacer el `Deploy`. Ejecutamos el siguiente comando, escogemos el `ERC3525SlotEnumerablMintableBurnable.cairo` y vamos siguiendo los pasos. En el paso de librería indicar `src` o `lib` como ruta en caso de error.
 
 ```bash
 starkscan
