@@ -200,8 +200,8 @@ Ahora procederemos a crear dos ejemplos iguales para los 2 contratos. Crearemos 
 </p>
 
 
-User Wallet:
 ```bash
+--------User Wallet---------------
 ╔══════╦══════════╦═══════════════╗
 ║ SLOT ║ TOKEN_ID ║     VALUE     ║
 ╠══════╬══════════╬═══════════════╣
