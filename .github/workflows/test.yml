@@ -3,7 +3,7 @@ name: CI Tests
 on: [push, pull_request, pull_request_target]
 
 env:
-  PROTOSTAR_VERSION: 0.9.0
+  PROTOSTAR_VERSION: 0.9.1
 
 jobs:
   protostar-tests:
@@ -14,6 +14,10 @@ jobs:
       - name: Install protostar
         run: |
           curl -L https://raw.githubusercontent.com/software-mansion/protostar/master/install.sh | bash -s -- -v $PROTOSTAR_VERSION
+      
+      - name: Install dependencies Cairo Contracts
+        run: |
+          protostar install https://github.com/OpenZeppelin/cairo-contracts.git
 
       - name: Install protostar dependencies
         run: /home/runner/.protostar/dist/protostar/protostar install
