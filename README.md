@@ -62,14 +62,16 @@ Un ejemplo de cómo este contrato podría ser útil podría ser el siguiente:
 
 Imagina que tienes una tienda de juguetes y quieres vender figuras de anime. Supongamos que quieres dividir tus figuras en diferentes categorías, como `Dragon Ball Z` y `Naruto`. 
 
-<img align='center' src="https://media0.giphy.com/media/SV0LuYdSMmKEklpZKs/giphy.gif" width="230">
-
 Además, quieres poder contar cuántas figuras hay en cada categoría. En este caso, el contrato `ERC3525SlotEnumerableMintableBurnable` sería el adecuado. Puedes usar las funciones [slotByIndex](src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo#L156) y [tokenSupplyInSlot](src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo#L163) para acceder a las figuras en cada categoría y [tokenInSlotByIndex]src/carbonable/erc3525/presets/ERC3525SlotEnumerableMintableBurnable.cairo#L171) para contar cuántas figuras hay en cada categoría.
 
 Cada juguete sería un token único y no fungible, y cada token se asignaría a un slot específico basado en el anime al que pertenece. Por ejemplo, todos los juguetes de Dragon Ball Z estarían en el slot 0, todos los de Naruto estarían en el slot 1, y así sucesivamente. 
 
 Pero ahora iremos mucho más haya, podríamos crear colecciones gigantes, pedidos inmensos o inclusive una parte en mercado libre, pero lo quiero plasmar es una idea de como los `SFTs` nos podrían ayudar más en una solución L2 como `Starknet` que en una L1 o en una solución centralizada. 
 
+
+<div style="width: 100%; margin: auto;">
+  <img src="https://media0.giphy.com/media/SV0LuYdSMmKEklpZKs/giphy.gif">
+</div>
 
 ---
 
