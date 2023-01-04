@@ -156,6 +156,10 @@ protostar -p testnet declare ./build/ERC3525MintableBurnable.json --max-fee auto
 ```bash
 protostar -p testnet declare ./build/ERC3525SlotEnumerableMintableBurnable.json --max-fee auto
 ```
+
+![Graph](/im%C3%A1genes/declareslot.png)
+
+
 * [Declare Cass Hash](https://testnet.starkscan.co/class/0x0058a8813fe98f05aa3a1883da43e41bd9faa490646e57e9579505c2a6eca9c)
 
 ---
