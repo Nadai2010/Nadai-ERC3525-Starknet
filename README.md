@@ -1,6 +1,10 @@
 # ¿Qué son los SFTs (Semi Fungibles Tokens)?
 
-## <img src="imágenes/Starknet.png" width="60"> Los ERC-3525 están en Starknet. <img src="https://media2.giphy.com/media/9x55tYxEVrI04pKHl1/giphy.gif" width="60">
+<center>
+##  <img src="https://media2.giphy.com/media/9x55tYxEVrI04pKHl1/giphy.gif" width="80">
+ Los ERC-3525 están en Starknet. <img src="imágenes/Starknet.png" width="60">
+</center>
+
 
 Buenas Amigos, ha llegado 2023 y como no podía ser menos debemos empezar con algunas ideas de desarrollo hacia L3. ¿Porqué en L3? ¿Es necesario? La mayoría de las respuestas serán NO, no debemos de sobrecargar las red principal de ETH y seguridad con proyectos, protocolos o capas innecesarias desde ningun punto de vista. Ya que desde mi humilde opinión, podemos crear modelos de nogocios inservibles, envueltos en fomo y con otras expectativas que no tendrán su logro, esto puede ser debido a que aunque la tecnología subyacente sea exitosa, su proyecto no debe necesarimente tener que incorporarla, ni servirle, recordad siempre los grandes casos de `BTC`, por ejemplo, Satoshi creo `BTC` como moneda para un medio de pagos entre personas libre, sin terceros ni autoridades intermediarias, pero al final el mal uso de la tecnolgía ha llevado a muchos declives de proyectos por estas malas causas, pero no ha sido culpa de `BTC` 🤣🤣...
 
