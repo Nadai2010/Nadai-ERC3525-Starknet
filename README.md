@@ -20,6 +20,7 @@ Pero bueno, ya que vamos hablar sobre nuevas ideas, recordamos que el **`L2022`*
 
 ---
 
+
 ## ¿Qué son los SFTs y ERC 3525?
 
 El ERC-3525 Semi-Fungible Token `SFT`, es un token estándar independiente de activos de uso general que impulsa la representación digital de última generación de propiedad, valor, derechos, estado e identidad. 
